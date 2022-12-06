@@ -1,4 +1,4 @@
-﻿
+
 DEVICE = 18F85J90
 
 OUT = gsm
@@ -24,3 +24,7 @@ $(OUT).elf: $(patsubst %.c,%.p1,$(wildcard *.c))
 
 clear:
 	rm -f *.d *.p1 *.s *.o *.sdb *.hex
+	
+	
+	
+include $(wildcard *.d)	
