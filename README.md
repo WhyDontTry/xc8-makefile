@@ -1,0 +1,1 @@
+1. —сылка дл€ загрузки Device Pack: https://packs.download.microchip.com/
