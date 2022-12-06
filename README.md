@@ -1,1 +1,1 @@
-1. Ссылка для загрузки Device Pack: https://packs.download.microchip.com/
+п»ї1. РЎСЃС‹Р»РєР° РґР»СЏ СЃРєР°С‡РёРІР°РЅРёСЏ Device Pack: https://packs.download.microchip.com/
