@@ -3,7 +3,7 @@ DEVICE = 18F85J90
 
 OUT = gsm
 
-PIC_TOOLCHAIN_DIR := C:/Program Files/Microchip/xc8/v2.35/
+PIC_TOOLCHAIN_DIR := C:/Program Files/Microchip/xc8/v2.35
 PIC_DEVICE_PACK_DIR := C:/PIC18Toolchain/Microchip.PIC18F-J_DFP.1.5.44/xc8
 
 CFLAGS_COMMON = -mcpu=$(DEVICE) -c -std=c99 -mheap=100 -mdfp=$(PIC_DEVICE_PACK_DIR)
@@ -17,13 +17,13 @@ $(OUT).elf: $(patsubst %.c,%.p1,$(wildcard *.c))
  
  
 %.p1: %.c
-	$(CC) $(CFLAGS_COMMON) -o$@ $<
+	$(CC) $(CFLAGS_COMMON) -o $@ $<
 	
 	
-.PHONY: clear
+.PHONY: clean
 
-clear:
-	rm -f *.d *.p1 *.s *.o *.sdb *.hex
+clean:
+	rm -f *.d *.p1 *.s *.o *.sdb *.hex *.elf *.cmf *.hxl *.lst *.rlf *.sym *.pre
 	
 	
 	
